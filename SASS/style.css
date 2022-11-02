@@ -505,6 +505,7 @@ body .pf #pf-para {
   display: inline;
   font-size: 1.5rem;
   position: relative;
+  letter-spacing: 0.3rem;
   color: #303034;
   padding-right: 50px;
   padding-left: 50px;
