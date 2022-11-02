@@ -9,7 +9,7 @@ body {
 }
 body {
   #banner {
-    background-image: url(/images/banner.jpg);
+    background-image: url(../images/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -31,8 +31,7 @@ body {
       right: 10%;
     }
 .nav-item{
-  font-size: 30px;
-  box-shadow: 9px 0px 5px white;
+  font-size: 20px;
   border-radius: 20px 0px;
   margin-bottom: 20px;
 }
@@ -199,7 +198,7 @@ body {
   color: #2cc9b4;
 }
 #RD {
-  background-image: url(/images/img-1.jpg);
+  background-image: url(../images/img-1.jpg);
   background-size:contain;
   text-align: center;
   background-repeat: no-repeat;
@@ -231,7 +230,7 @@ body {
   }
 }
 #tl-con {
-  background-image: url(/images/img-2.jpg);
+  background-image: url(../images/img-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -254,7 +253,8 @@ body {
   }
   #tl-logo {
     background-color: #2cc9b4;
- 
+    text-decoration: none;
+    color: white;
     display: inline-block;
     border-radius: 60px;
     // box-shadow: 0 0 2px #888;
@@ -374,6 +374,7 @@ body {
     font-size: 25px;
     padding: 0.75em 0.81em;
     border-radius: 50%;
+    transition: 1s;
     text-align: center;
   }
   .team-icons:hover {
@@ -447,7 +448,7 @@ body {
   }
 }
 .contact-us {
-  background-image: url(/images/img-6.jpg);
+  background-image: url(../images/img-6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -508,6 +509,8 @@ body {
     border-radius: 50%;
     text-align: center;
     margin-left: 10px;
+    transition: 1s;
+
     margin-right: 10px;
     margin-bottom: 100px;
   }
