@@ -516,16 +516,16 @@ body {
   color: #303034;
 
   @media only screen and (max-width: 466px) {
-    .all-heading {
+   
       padding: 20px 0;
       font-size: 0.6rem;
-    }
+    
    
   }
   @media only screen and (max-width: 718px) {
-    .all-heading {
+    
       font-size: 1.2rem;
-    }
+    
   }
   span::before {
     border-bottom: 5px dotted;
@@ -537,7 +537,7 @@ body {
     padding: 35px 20px;
     color: black;
     content: "";
-    @media only screen and (max-width:400px){
+    @media only screen and (max-width:400px){}
       border-bottom: 5px dotted;
       width: 40%;
       position: absolute;
@@ -548,7 +548,7 @@ body {
       color: black;
       content: "";
     }
-  }
+  
   span::after {
     border-bottom: 5px dotted;
     width: 45%;
@@ -560,6 +560,7 @@ body {
     color: black;
     content: "";
     @media only screen and (max-width:400px){
+      span::after{
       border-bottom: 5px dotted;
       width: 40%;
       position: absolute;
@@ -569,6 +570,7 @@ body {
       padding: 35px 20px;
       color: black;
       content: "";
+      }
     }
   }
 }

@@ -503,13 +503,13 @@ body {
   color: #303034;
 }
 @media only screen and (max-width: 466px) {
-  .all-heading .all-heading {
+  .all-heading {
     padding: 20px 0;
     font-size: 0.6rem;
   }
 }
 @media only screen and (max-width: 718px) {
-  .all-heading .all-heading {
+  .all-heading {
     font-size: 1.2rem;
   }
 }
@@ -523,19 +523,15 @@ body {
   padding: 35px 20px;
   color: black;
   content: "";
-}
-@media only screen and (max-width: 400px) {
-  .all-heading span::before {
-    border-bottom: 5px dotted;
-    width: 40%;
-    position: absolute;
-    left: 2%;
-    border-color: #8b8b8f;
-    bottom: -30px;
-    padding: 35px 20px;
-    color: black;
-    content: "";
-  }
+  border-bottom: 5px dotted;
+  width: 40%;
+  position: absolute;
+  left: 2%;
+  border-color: #8b8b8f;
+  bottom: -30px;
+  padding: 35px 20px;
+  color: black;
+  content: "";
 }
 .all-heading span::after {
   border-bottom: 5px dotted;
@@ -549,7 +545,7 @@ body {
   content: "";
 }
 @media only screen and (max-width: 400px) {
-  .all-heading span::after {
+  .all-heading span::after span::after {
     border-bottom: 5px dotted;
     width: 40%;
     position: absolute;
