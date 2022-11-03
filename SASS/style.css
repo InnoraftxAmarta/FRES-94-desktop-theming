@@ -111,16 +111,16 @@ body {
   padding-bottom: 120px;
 }
 
-@media only screen and (max-width: 900px) {
-  .wwd-inner {
-    margin-top: 120px;
-    text-align: center;
-  }
-}
 #wwd {
   margin-top: 120px;
   text-align: center;
   background-color: white;
+}
+@media only screen and (max-width: 900px) {
+  #wwd .wwd-inner .wwd-inner {
+    margin-top: 120px;
+    text-align: center;
+  }
 }
 #wwd .wwd-inner .wwd-heading {
   font-weight: 400;
@@ -162,7 +162,7 @@ body {
   text-align: center;
   color: #8c9497;
   margin-top: 30px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 0 10px;
 }
 
@@ -184,20 +184,7 @@ body {
   background-color: white;
   padding-bottom: 120px;
 }
-#RD .rd-heading {
-  margin-top: 50px;
-  font-weight: 400;
-  letter-spacing: 0.2rem;
-  padding-bottom: 5px;
-  text-align: center;
-}
-#RD .rd-underheading {
-  letter-spacing: 0.3rem;
-  color: #d3d6db;
-  text-align: center;
-  margin-bottom: 80px;
-}
-#RD #rd-para {
+#RD #all-para {
   margin-top: 50px;
   text-align: center;
 }
@@ -216,11 +203,21 @@ body {
   margin-top: 80px;
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 500px) {
+  #tl-con .tl-head {
+    font-size: 2rem;
+  }
+}
 #tl-con .tl-head2 {
   font-weight: 300;
   letter-spacing: 0.5rem;
   margin-bottom: 50px;
   font-size: 1.7rem;
+}
+@media only screen and (max-width: 500px) {
+  #tl-con .tl-head2 {
+    font-size: 1rem;
+  }
 }
 #tl-con .tl-col {
   margin-bottom: 80px;
@@ -275,10 +272,9 @@ body {
   font-size: 1.2rem;
   letter-spacing: 0.5rem;
 }
-.design .design-col .design-para {
-  margin-top: 25px;
+.design .design-col #all-para {
+  margin-top: 50px;
   text-align: center;
-  color: #8c9497;
 }
 .design .photo-con:hover .child1 {
   display: block;
@@ -327,10 +323,9 @@ body {
   text-align: center;
   margin-top: 30px;
 }
-.team .team-para {
-  margin-top: 30px;
+.team #all-para {
+  margin-top: 50px;
   text-align: center;
-  margin-bottom: 50px;
 }
 .team .team-row {
   text-align: center;
@@ -502,35 +497,69 @@ body {
 }
 
 .all-heading {
-  display: inline;
   font-size: 1.5rem;
   position: relative;
   letter-spacing: 0.3rem;
   color: #303034;
-  padding-right: 50px;
-  padding-left: 50px;
+}
+@media only screen and (max-width: 466px) {
+  .all-heading .all-heading {
+    padding: 20px 0;
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (max-width: 718px) {
+  .all-heading .all-heading {
+    font-size: 1.2rem;
+  }
 }
 .all-heading span::before {
   border-bottom: 5px dotted;
-  width: 50%;
+  width: 45%;
   position: absolute;
-  left: -50px;
+  left: 0%;
+  border-color: #8b8b8f;
   bottom: -30px;
   padding: 35px 20px;
-  border-color: #8b8b8f;
   color: black;
   content: "";
 }
+@media only screen and (max-width: 400px) {
+  .all-heading span::before {
+    border-bottom: 5px dotted;
+    width: 40%;
+    position: absolute;
+    left: 2%;
+    border-color: #8b8b8f;
+    bottom: -30px;
+    padding: 35px 20px;
+    color: black;
+    content: "";
+  }
+}
 .all-heading span::after {
   border-bottom: 5px dotted;
-  width: 50%;
+  width: 45%;
   position: absolute;
-  right: -50px;
+  right: 0%;
   border-color: #8b8b8f;
   bottom: -30px;
   padding: 35px 20px;
   color: black;
   content: "";
+}
+@media only screen and (max-width: 400px) {
+  .all-heading span::after {
+    border-bottom: 5px dotted;
+    width: 40%;
+    position: absolute;
+    right: 2%;
+    border-color: #8b8b8f;
+    bottom: -30px;
+    padding: 35px 20px;
+    color: black;
+    content: "";
+  }
 }
 
 .all-heading::after {
@@ -543,19 +572,11 @@ body {
   font-size: 30px;
 }
 
-.div-para {
-  padding-top: 50px;
+#all-para {
+  margin-top: 50px;
+  text-align: center;
 }
 
-@media only screen and (max-width: 466px) {
-  .all-heading {
-    padding: 20px 0;
-    font-size: 0.6;
-  }
-  #rd-para {
-    font-size: 0.5rem;
-  }
-}
 .slick-dots li button:before {
   font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
